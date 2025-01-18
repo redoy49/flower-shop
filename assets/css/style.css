@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+body {
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Shared styles */
+.btn {
+  padding: 20px 43px;
+  background: #e55473;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e96a85;;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: rgba(229, 84, 115, 0.10);
+}
