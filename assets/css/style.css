@@ -32,16 +32,10 @@ body {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  margin-bottom: 128px;
 }
 
-.featured-flower h2 {
-  color: #272727;
-  font-size: 40px;
-  font-weight: 800;
-  margin-bottom: 24px;
-}
-
-.featured-flower > p {
+.section-description {
   color: rgba(39, 39, 39, 0.6);
   font-size: 18px;
   font-weight: 400;
@@ -51,8 +45,16 @@ body {
   margin-bottom: 48px;
 }
 
+.section-title {
+  color: #272727;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
 /* Header styles */
-.header {
+.header,
+.offer {
   max-width: 1920px;
   margin: 0 auto;
 }
@@ -125,7 +127,8 @@ body {
   border-radius: 300px 300px 0px 0px;
 }
 
-.img-container img {
+.img-container img,
+.offer-img img {
   max-width: 100%;
   height: auto;
 }
@@ -140,6 +143,66 @@ body {
 
 .flower-card .gray {
   background: rgba(71, 125, 17, 0.15);
+}
+
+/* Support section */
+.support-container {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  display: flex;
+  justify-content: space-between;
+  max-height: auto;
+  border-radius: 8px;
+  background: rgba(39, 39, 39, 0.05);
+  padding: 87px 175px;
+}
+
+.support-container p {
+  color: rgba(39, 39, 39, 0.8);
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 35px; /* 145.833% */
+}
+
+.img-group {
+  margin-bottom: 24px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .img-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+.support-container img {
+  display: block;
+}
+
+/* offer styles */
+.offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: rgba(229, 84, 115, 0.05);
+  height: 620px;
+  column-gap: 215px;
+  margin-bottom: 128px;
+}
+
+.offer-info {
+  text-align: center;
+}
+
+.offer-description {
+  margin-bottom: 32px;
 }
 
 @media (max-width: 768px) {
@@ -176,5 +239,25 @@ body {
 
   .banner-content p {
     font-size: 14px;
+  }
+
+  .flower-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 16px;
+  }
+
+  .support-container {
+    flex-direction: column;
+    margin: 16px;
+    padding: 16px;
+  }
+  .support-container p {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+  .offer {
+    flex-direction: column;
+    height: auto;
   }
 }
